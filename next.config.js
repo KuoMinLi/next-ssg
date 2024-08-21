@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  distDir: 'dist',
-  images: {
-    unoptimized: true,
-  },
+  basePath: '/next-ssg',
+  distDir: 'out',
 };
 
-export default nextConfig;
+module.exports = nextConfig
